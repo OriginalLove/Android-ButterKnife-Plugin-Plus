@@ -6,13 +6,13 @@
 
 1. 可以自由选择是否在当前类中对ButterKnife进行初始化，避免了原版本只要使用插件初始化控件会自动0在onCreate中进行ButterKnife.bind(this)的尴尬。
 
-   ![1](/Users/yangfei/Documents/yf/Github/Android-ButterKnife-Plugin-Plus/img/1.png)
+   ![1](img/1.png)
 
    - 这样就可以在基类中进行ButterKnife的初始化，不必要每个类中都要初始化，对开发框架的搭建更加方便。
 
 2. 在Android Studio的设置界面，对在当前类中是否强制初始化提供了默认值设置，这样就可以让插件使用更符合自己的操作习惯。
 
-   ![2](/Users/yangfei/Documents/yf/Github/Android-ButterKnife-Plugin-Plus/img/2.png)
+   ![2](img/2.png)
 
 # 如何使用
 
@@ -20,7 +20,7 @@
 
   如何搜索安装？在AS中按照如下：Preferences->Plugins->Browse Repositories 进入插件搜索安装界面：
 
-  ![3](/Users/yangfei/Documents/yf/Github/Android-ButterKnife-Plugin-Plus/img/3.png)
+  ![3](img/3.png)
 
   搜索插件名称：Android ButterKnife Plugin Plus 安装即可使用。
 
