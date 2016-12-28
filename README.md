@@ -4,7 +4,7 @@
 
 ​	Android studio 的插件，方便快速实现ButterKnife注解框架，包含了[**android-butterknife-zelezny**](https://github.com/avast/android-butterknife-zelezny) 1.6版本的所有功能，并在此基础上新增如下功能：
 
-1. 可以自由选择是否在当前类中对ButterKnife进行初始化，避免了原版本只要使用插件初始化控件会自动0在onCreate中进行ButterKnife.bind(this)的尴尬。
+1. 可以自由选择是否在当前类中对ButterKnife进行初始化，避免了原版本只要使用插件初始化控件会自动在onCreate中进行ButterKnife.bind(this)的尴尬。
 
    ![1](img/1.png)
 
