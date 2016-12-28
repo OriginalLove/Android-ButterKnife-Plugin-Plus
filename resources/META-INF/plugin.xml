@@ -2,7 +2,7 @@
     <id>life.iuni.android.plugin.butterknife</id>
     <name>Android ButterKnife Plugin Plus</name>
     <version>1.0.0-SNAPSHOT</version>
-    <vendor email="q568660429@gmail.com" url="https://github.com/OriginalLove">wincomit</vendor>
+    <vendor email="q568660429@gmail.com" url="https://github.com/OriginalLove/Android-ButterKnife-Plugin-Plus">wincomit</vendor>
 
     <description><![CDATA[
       Plugin for generating ButterKnife injections from selected layout XMLs in activities/fragments/adapters.<br>
