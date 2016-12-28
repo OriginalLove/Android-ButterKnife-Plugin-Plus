@@ -1,0 +1,53 @@
+<idea-plugin version="2">
+    <id>life.iuni.android.plugin.butterknife</id>
+    <name>Android ButterKnife Plugin Plus</name>
+    <version>1.0.0-SNAPSHOT</version>
+    <vendor email="q568660429@gmail.com" url="https://github.com/OriginalLove">wincomit</vendor>
+
+    <description><![CDATA[
+      Plugin for generating ButterKnife injections from selected layout XMLs in activities/fragments/adapters.<br>
+      Add some new features based on on the Android ButterKnife Zelezny(Version 1.6.0-SNAPSHOT).<br>
+    ]]></description>
+
+    <change-notes><![CDATA[
+      <b>1.0.0-SNAPSHOT</b>
+      <ul>
+         <li>Include Android ButterKnife Zelezny(Version 1.6.0-SNAPSHOT) all the functions.</li>
+         <li>Add function allows you to choose whether to initialize the butterKnife in activities/fragments.</li>
+         <li>In the Android Studio settings interface, you can set whether the class can initialize the ButterKnife default value.</li>
+       </ul>
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="141.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action class="com.avast.android.butterknifezelezny.InjectAction" id="AddInjectionsAction"
+                text="Generate _Butterknife Injections"
+                icon="/icons/butterknife-zelezny.png"
+                description="Plugin for generating ButterKnife injections from selected layout XMLs in activities/fragments/adapters"
+        >
+            <keyboard-shortcut
+                    keymap="$default"
+                    first-keystroke="shift control B"/>
+            <add-to-group group-id="GenerateGroup"/>
+        </action>
+    </actions>
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationConfigurable instance="com.avast.android.butterknifezelezny.Settings"/>
+        <codeInsight.lineMarkerProvider language="JAVA"
+                                        implementationClass="com.avast.android.butterknifezelezny.navigation.NavigationMarkerProvider"/>
+    </extensions>
+</idea-plugin>
